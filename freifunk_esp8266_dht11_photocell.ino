@@ -151,7 +151,7 @@ String SendHTML(float Temperaturestat,float Humiditystat){
      ptr +="<p>Spannung Photozelle: ";
      ptr +=voltage;
      ptr +=" V ->";
-     if (voltage >0.9){
+     if (voltage >0.5){ // just a guessed value - needs tuning
       ptr +="Tag";
      }else{
       ptr +="Nacht";
